@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>filter</title>
+</head>
+<body>
+    <div class="container">
+        <div id="uploader" class="upload">
+            <label for="upload-photo"><i class="fas fa-cloud-upload-alt"></i></label>
+            <input type="file" id="upload-photo" onchange="fileSelected(event)" />
+        </div>
+        <div class="contImg">
+            <img id="myimage">
+        </div>
+    </div>
+    <div class="comandi">
+        <ul id="filter-list">
+            <li>
+                <p>Grayscale</p>
+                <input id="grayscale" type="range" min="0" max="100" value="0" onclick="setFilter(this.filter)">
+            </li>
+            <li>
+                <p>Saturate</p>
+                <input id="saturate" type="range" min="0" max="100" value="88" onclick="setFilter(this.filter)">
+            </li>
+            <li>
+                <p>Sepia</p>
+                <input id="sepia" type="range" min="0" max="100" value="0" onclick="setFilter(this.filter)">
+            </li>
+            <li>
+                <p>Invert</p>
+                <input id="invert" type="range" min="0" max="100" value="0" onclick="setFilter(this.filter)">
+            </li>
+            <li>
+                <p>Contrast</p>
+                <input id="contrast" type="range" min="0" max="100" value="90" onclick="setFilter(this.filter)">
+            </li>
+            <li>
+                <p>Brightness</p>
+                <input id="brightness" type="range" min="0" max="100" value="100" onclick="setFilter(this.filter)">
+            </li>
+            <li>
+                <p>Blur</p>
+                <input id="blur" type="range" min="0" max="10" value="0" onclick="setFilter(this.filter)">
+            </li>
+            <li>
+                <p>Hue Rotate</p>
+                <input id="hue-rotate" type="range" min="0" max="360" value="0" onclick="setFilter(this.filter)">
+            </li>
+        </ul>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

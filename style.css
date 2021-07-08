@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #293542 ;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload {
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px 40px;
+}
+
+/* nascondo dietro la label l'input file */
+label {
+   cursor: pointer;
+}
+
+label i.fa-cloud-upload-alt {
+    font-size: 180px;
+    color: rgb(40, 125, 252);
+}
+
+
+
+#upload-photo {
+   opacity: 0;
+   position: absolute;
+   z-index: -1;
+}
+/* /nascondo dietro la label l'input file */
+
+.contImg {
+    height: 350px;
+    text-align: center;
+}
+
+.contImg img {
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* comandi */
+
+.vol {
+    position: relative;
+    width: 100px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: white;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    
+}
+
+.percvol {
+    background-color: lime;
+    height: 5px;
+    width: 0%;
+    position: absolute;
+    left: 0%;
+}
+
+.percentuale {
+    background-color: lime;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0%;
+    cursor: pointer;
+
+}
+
+div.comandi {
+    width: 100%;
+    padding: 30px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li {
+    text-align: center;
+}
+
+li p {
+    color: white;
+}
